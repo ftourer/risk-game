@@ -1,0 +1,312 @@
+== Use Case Template
+
+Version 1.20
+
+*Instructions for removing the ‘Hints, Guidelines and Examples’ from
+this document*
+
+After you have completed the Use Case document, you may want to remove
+the hints and guidelines provided in the document.
+
+To remove the hints: (This procedure applies to Microsoft Word XP and
+higher)
+
+[arabic]
+. Click on any text formatted as Hint.
+. Then, click the right mouse button.
+. A pop-up menu will appear, choose ‘Select text with similar
+formatting’
+. All Hint text will now be selected in the document.
+. *Ensure that none of the text that you have entered is in the
+selection.*
+. Press the _Delete_ key to remove the _Hints , Guidelines and
+examples._.
+
+=== Revision History +
+
+[cols=",,",options="header",]
+|===
+|Date |Author |Description of change
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+|===
+
+Use Case Template. Copyright (c) 2004-2005 TechnoSolutions Corporation
+
+(Learn more about “TopTeam for Use Cases” at
+http://www.technosolutions.com[[.underline]#www.technosolutions.com#])
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this document and its associated documentation, to use the
+document on their projects for any commercial or non-commercial purpose.
+However you may not publish, distribute, sublicense, and/or sell copies
+of this document.
+
+THE DOCUMENT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+DOCUMENT OR THE USE OR OTHER DEALINGS IN THE DOCUMENT. TECHNOSOLUTIONS
+CORPORATION MAKES NO REPRESENTATIONS ABOUT THE SUITABILITY OF THIS
+DOCUMENT FOR ANY PURPOSE. +
+*Use Case:* <Enter Use Case name here>
+
+<Enter a short name for the Use Case using an active verb phrase.
+
+e.g. Withdraw Cash, Register Customer, Rent Video, Calculate Sales Tax,
+etc.>
+
+*Id*: UC- <Enter value of Id here>
+
+<Enter a unique numeric identifier for the Use Case. e.g. UC-113>
+
+*Description*
+
+<Enter description here>
+
+<Briefly describe this use case.
+
+e.g. Customer brings selected video(s) to the sales counter for the
+purpose of renting them. Store clerk processes the rental payment,
+records the rented video(s) against customer’s account, and hands over
+the video(s) to the customer.>
+
+*Level:* <Enter Use Case Goal Level here>
+
+<Enter the goal level of this Use Case. Specify whether the Use Case
+level is - High Level Summary, Summary, User Goal, Sub-Function, Low
+Level>
+
+*Primary Actor*
+
+<List the Primary actor here>
+
+<List the Actor who’s goal is being satisfied by this Use Case and has
+the primary interest in the outcome of this Use Case.
+
+e.g. Store Clerk>
+
+*Supporting Actors*
+
+<List supporting actors here>
+
+<List the Actors who have a supporting role in helping the Primary Actor
+achieve his or her goal.
+
+e.g. Customer, Store Manager>
+
+*Stakeholders and Interests*
+
+<List Stakeholders and their interests here>
+
+<List the various entities who may not directly interact with the system
+but they may have an interest in the outcome of the use case.
+Identifying stakeholders and interests often helps in discovering hidden
+requirements which are not readily apparent or mentioned directly by the
+users during discussions. +
+e.g. In a Use Case ‘Generate Salary Stub’, the entity Internal Revenue
+Service(IRS) has no direct interaction, however, it sure has interest in
+ensuring that the proper tax deduction has been made from the employee’s
+salary. This can be written as follows: +
+ +
+Internal Revenue Service – Has interest in ensuring that the tax
+deduction is made from each employee’s salary as per the tax table.>
+
+*Pre-Conditions*
+
+<List Pre-Conditions here>
+
+< List the system state/conditions which must be true before this Use
+Case can be executed.
+
+e.g. Store Clerk must be logged in to system.>
+
+*Post Conditions*
+
+[.underline]#Success end condition#
+
+<List success end condition here>
+
+<Enter the successful end condition of the Use Case where the Primary
+Actor’s goal is satisfied.
+
+e.g. Video is rented to the customer and customer is charged for the
+rental. Rental store’s inventory is updated to reflect the rented
+video.>
+
+[.underline]#Failure end condition#:
+
+<List failure end condition here>
+
+< Enter the failure end condition of the Use Case if the Primary Actor’s
+goal has not been achieved.
+
+e.g. Customer is unable to rent the video. Rental Store’s video
+inventory remains unchanged.>
+
+[.underline]#Minimal Guarantee#
+
+<List minimal guarantee here>
+
+< The guarantee or assurance that this Use Case provides to all Actors
+and Stakeholders to protect their interest regardless of whether the Use
+Case ends with success or failure.
+
+e.g. For Withdraw Cash (ATM Use Case), minimal guarantee could be,
+Customer is logged out of the ATM system. +
+This minimum guarantee ensures that the system will ensure that no
+unauthorized withdrawals can be made from the ATM thus protecting the
+interest of the Bank Customer as well as the Bank’s stakeholders. >
+
+*Trigger*
+
+<List Use Case trigger here>
+
+<The event that starts this Use Case.
+
+Example
+
+For _Rent Video_ Use Case - Customer brings the Video to the sales
+counter.
+
+For _Withdraw Cash_ Use Case - Customer inserts the bank card into the
+ATM machine.>
+
+=== Main Success Scenario
+
+[arabic]
+. <Enter steps here>
+. <Enter steps here>
+. <Enter steps here>
+
+<Enter the Main flow of events. i.e. The steps narrating/illustrating
+the interaction between Actors and the System. Describe Actor’s
+actions/stimuli and how the system responds to those stimuli. Describe
+the ‘happy path/day’ scenario, meaning the straight and simple path
+where everything goes ‘right’ and enables the primary actor to
+accomplish his or her goal. Main flow/path should always end with a
+success end condition.>
+
+=== Extensions
+
+<Enter Extensions and their steps here>
+
+<Enter any extensions here. Extensions are branches from the main flow
+to handle special conditions. They also known as Alternate flows or
+Exception flows. For each extension reference the branching step number
+of the Main flow and the condition which must be true in order for this
+extension to be executed.
+
+Example of an Extension in Rent Video Use Case:
+
+4a. In step 4, if the customer has accumulated late returns fee greater
+than ten dollars
+
+{empty}1. System will prompt for payment of the dues
+
+{empty}2. Customer pays the dues
+
+{empty}3. Store clerk adds the amount to the total
+
+{empty}4. Use Case resumes on step 4.
+
+>
+
+=== Variations
+
+<Enter variations here>
+
+<Enter any data entry or technology variations such as – different
+methods of data input, screen/module invocation, etc.
+
+e.g. +
+3’. In step 3, instead of reading Video Id using a bar code scanner, the
+store clerk may enter it directly using the keyboard.>
+
+*Frequency:* <Enter Frequency of execution here>
+
+< How often will this Use Case be executed. This information is
+primarily useful for designers.
+
+e.g. enter values such as 50 per hour, 200 per day, once a week, once a
+year, etc.>
+
+*Assumptions*
+
+<Enter any assumptions, if any, that have been made while writing this
+Use Case.
+
+e.g. For _Withdraw Cash_ Use Case(ATM system) an assumption could be: +
+The Bank Customer understands either English or Spanish language.>
+
+=== Special Requirements 
+
+<Enter any special requirements such as Performance requirements,
+Security requirements, User interface requirements, etc. Examples:
+
+Performance
+
+{empty}1. The ATM shall dispense cash within 15 seconds of user request.
+
+User Interface
+
+{empty}1. The ATM shall display all options and messages in English and
+Spanish languages.
+
+{empty}2. The height of letters displayed on the display console shall
+not be smaller than 0.5 inches. (Reference - Americans with Disabilities
+Act, Document xxx, para xxx).
+
+Security
+
+{empty}1. The system shall display the letters of PIN numbers in a
+masked format when they are entered by the customer. +
+i.e. Mask the PIN with characters such as ****. Rationale – This is to
+ensure that a bystander will not be able to read the PIN being entered
+by the customer.
+
+{empty}2. The ATM system will allow user to Cancel the transaction at
+any point and eject the ATM card within 3 seconds. Rationale – In case
+the customer in duress/in fear of own security he/she needs to quickly
+get away.
+
+{empty}3. The ATM system shall not print the customer’s account number
+on the receipt of the transaction.
+
+>
+
+=== Issues 
+
+[arabic]
+. {blank}
+
+<List any issues related to the definition of the use case.
+
+Example
+
+1.What is the maximum size of the PIN that a use can have? >
+
+=== To do
+
+[arabic]
+. {blank}
+
+<List any work or follow-ups that remain to be done on this use case.
+
+Example
+
+{empty}1. Obtain the sales tax table for computation of tax on video
+rentals from user.
+
+{empty}2. Need to ensure that we have covered all parties under the
+‘Stakeholders and Interests’ heading. >
+
+To learn more about “TopTeam Analyst for Use Cases” visit
+http://www.technosolutions.com[[.underline]#www.technosolutions.com#]

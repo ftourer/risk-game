@@ -1,0 +1,97 @@
+
+= Cas d'utilisation 2-C: Déplacement Strategique
+
+
+== Description
+
+Après chaque attaque le joueur a le choix de renforcer un des ses territoire strategiquement en deplacant ses troupes
+vers un territoire source et un autre adjescent à ce dernier.
+Mais il doit toujours garder une armée, pour eviter l'abandon du territoire.
+
+Niveau:: Stratégique
+Portée:: Système
+Priorité:: Haute
+Échéance:: 1e version
+
+
+== Acteurs principaux
+
+* Le joueur
+
+== Acteurs de soutien
+
+* Aucun
+
+== Parties prenantes et intérêts
+
+* Aucun
+
+== Pré-conditions
+
+* Le joueur ne peut que déplacer des armés  vers un  autre de ses territoire qui sont adjascents à celui qui a choisit comme source
+* Le joueur doit au laisser avoir une armée avant das son territoire s'il veut renforcer un autre des ses territoire
+
+
+== Post-conditions
+
+=== Condition finale de réussite
+* Le territoire recoit le nombre d'armée souhaiter
+* Il reste toujours au moins une armée dans le territoire après chaque déplacement.
+
+=== Condition finale d'échec
+
+=== Garanties minimales
+
+
+== Événement déclencheur
+
+* Fin de l'attaque.
+* Le joueur  a passer son attaque.
+
+== Scénario nominal
+
+
+[arabic]
+. Le joueur passe son attaque || L'attaque du joueur est fini.
+. Le joueur réalise les étapes suivantes pour se renforcer.
+.. Le joueur choisit un territoire source.
+.. Le joueur choisit un territoire de destination pour ses troupes.
+.. Le Joueur choisit le nombre de troupe qu'il souhaite deplace.
+. [[pass,3]]  Le joueur passe son tour pour ce renforcer.
+
+
+
+== Extensions
+
+:xrefstyle: short
+
+<<pass>> : il ne passe pas vraiment
+
+
+== Variantes
+
+
+
+== Fréquence
+* Pendant un tour.
+* Si le joueur le souhaite.
+
+// To Do
+
+== Hypothèses
+
+* Aucune
+
+== Exigences particulières
+
+
+
+
+== Questions ouvertes
+
+. Aucune
+
+== À faire
+
+
+== Annexes

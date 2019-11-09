@@ -1,0 +1,86 @@
+= Spécification des composants
+
+
+Ce livrable correspond à la "conception préliminaire" du projet. Il comprend la division de la solution en différents composants, l'explication des fonctionnalités attendues de chaque composant, la spécification des interfaces fournies par chaque composant, ainsi que des diagramme de séquence qui valident ces interfaces.
+
+== Objectif
+Préciser les objectifs de ce chapitre. 
+
+== Organisation du chapitre
+
+Cette section décrit le contenu du reste du chapitre  et explique comment le document est organisé.
+
+== Description des composants 
+Notre Système est base sur une architecture à deux niveaux ou une architecture deux tiers, client-server.
+On n'a pu établir deux composants principales pour notre système.
+Un composant client et un composant Serveur
+
+//Division du système en composants.
+.Le comportement souhaité de la composant Server :
+
+ * Permettre aux joueurs de rejoindre le serveur et d'interagir avec d'autres joueurs.
+ * La partie AI est realisée du coté serveur.
+* Vérifier certaines actions executé dans la composant client.
+
+.Le comportement souhaité de la composant Client :
+
+* Joueurs pourront utiliser les options proposer par le serveur.
+* Certaines actions pourront être executer dans la composant client mais devront etre
+ vérifier dans la composant serveur .
+*
+//Décrire le comportement souhaité des composants.
+
+
+== Le composant `Game Server`
+
+//Décrire succinctement le comportement du composant.
+Cette composant gère
+
+=== Spécification des interfaces
+
+==== Spécification de l'interface A
+	
+Présentation de l'interface en UML (ou HUTN). 
+Description du comportement de chaque opération. 
+Spécification éventuelle des pré-conditions en OCL.
+
+==== Spécification de l'interface B 
+
+== Le composant `Web Client`
+
+//Décrire succinctement le comportement du composant.
+
+=== Spécification des interfaces
+
+==== Spécification de l'interface A
+	
+Présentation de l'interface en UML (ou HUTN). 
+Description du comportement de chaque opération. 
+Spécification éventuelle des pré-conditions en OCL.
+
+==== Spécification de l'interface B 
+
+
+== Interactions
+
+Objectif: décrire, à haut-niveau, la collaboration entre les composants majeurs, en faisant référence aux besoins.
+
+Utiliser des interactions, c'est à dire, des diagrammes de séquence et des diagrammes de communication. 
+
+** Ne vous limitez pas à une seule interaction par cas d'utilisation
+
+=== Mise en place d'un jeu
+
+==== Interaction: cas nominal
+
+==== Interaction: cas A
+
+==== Interaction: cas B
+
+=== Tour d'un joueur 
+
+==== Interaction: cas nominal
+
+==== Interaction: cas A
+
+==== Interaction: cas B

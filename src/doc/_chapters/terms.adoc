@@ -1,0 +1,47 @@
+[.small]
+[width="100%",cols="34%,33%,33%",]
+|===
+|*Term*
+|*Short Description*
+|*Meaning*
+
+| Joueur
+| Une personne qui joue au jeu Risk.
+| Une personne qui afronte les joueurs adverses dans le but de gagner la partie.
+
+|Carte Mission
+| Type de carte fourni par le jeu.
+| Utilisée pour jouer à la variante Risk Mission.
+
+|Carte Territoire
+| Type de carte fourni par le jeu.
+| Utilisée pour jouer à la version de base du jeu ( La Conquête du monde)
+
+|Dé
+| Un cube possédant 6 faces numérotées de 1 à 6.
+| Utilisé pour l'attaque, la défence et choisir le tour des joueurs.
+
+| Pions
+| Piéces utilisées dans le jeu.
+| Le jeu contient trois types de Pions utilisés pour réclamer, envahir et renforcer les territoires.
+  ll y a six séries de pions chacune d'une couleur différente. Chaque joueur choisit une couleur pour représenter son armée.
+
+| Attaque
+| Une action menée par un joueur contre d'autres joueurs.
+| l'action d'attaquer les autres joueurs qui ce situent sur d'autres territoires dans le jeu en utilisant des dés et des pions.
+
+
+| Victoire
+| Un joueur gagne au jeu.
+| Quand un joueur arrive à envahir tous les territoires adverses ou atteint ses 4 objectifs en première position.
+
+
+|Continent
+|Surface du monde contenant nombreux territoires
+|Le jeu représente la carte du monde avec les 6 continents.
+
+|Territoire
+| Une partie du continent
+|Le jeu est composé de 42 territoires sur lesquels les joueurs peuvent placer leurs régiments.
+
+|===

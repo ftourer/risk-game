@@ -1,0 +1,89 @@
+= Use Case 1: Mise en place
+
+== Description
+
+Entre deux et six joueurs se trouvent pour jouer à Risk.
+L'arbitre (Système) prépare et distribue les cartes aux joueurs et les armées selon le nombre de joueur present dans la partie.
+Chaque joueur prend une couleur, l'arbitre attribut la position de chaque joueur dans la partir
+
+Niveau:: Stratégique
+Portée:: Système
+Priorité:: Haute
+Échéance:: 1e version
+
+== Acteurs principaux
+
+. Les joueurs
+. L'arbitre
+4
+== Acteurs de soutien
+
+* Aucun pour l'instant
+
+== Parties prenantes et intérêts
+
+* Aucun pour l'instant
+
+== Pré-conditions
+
+* L'arbitre et les joueurs peuvent communiquer entre-eux.
+* L'arbitre attribut les postions des joueurs.
+* Le jeu de carte est complet et disponible.
+* Les armées sont aux complet.
+
+
+== Post-conditions
+
+=== Condition finale de réussite
+
+* Chaque joueur connait son ordre(position).
+* Chaque joueur connait sa mission.
+* Tous les joueurs en place leurs soldats sur le plateau.
+
+=== Condition finale d'échec
+
+* Les joueurs n'ont pas recu leurs missions.
+* Certains joueurs ont la meme position.
+* Les joueurs n'ont pas reçu leurs cartes et les armees.
+
+
+=== Garanties minimales
+
+* Aucune
+
+== Événement déclencheur
+
+Les deux joueurs se retrouvent et souhaitent s'affronter.
+
+== Scénario nominal
+
+
+[arabic]
+// To Do
+. L'arbitre distribue les cartes et soldats.
+. Chaque joueur choisit une couleur.
+. L'arbitre désigne le joueur qui commencera la partie.
+. Chaque joueurs choisissent des territoires et positionnent les soldats sur les territoires choisis.
+. Début du tour.
+
+== Extensions
+
+
+== Variantes
+
+
+== Fréquence
+
+* Le nombre de parties jouées en même temps est inconu.
+
+== Hypothèses
+
+* Il existe un chemin de communication entre l'arbitre et les joueurs et entre les joueurs.
+
+== Exigences particulières 
+
+* Aucun
+
+
+
+== Annexes

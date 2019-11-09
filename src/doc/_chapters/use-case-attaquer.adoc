@@ -1,0 +1,98 @@
+
+= Cas d'utilisation 2-B: Attaquer un enemi
+
+
+== Description
+Pour attaquer un territoire enemi, le joueur doit choisir un  des ses territoires, puis choisir un territoire enemi adjascent a son
+territtoire choisis. Le joueur decide le nombre de troupes qu'il souhaite envoyer pour envahir pour le territoire enemi
+
+Niveau:: Stratégique
+Portée:: Système
+Priorité:: Haute
+Échéance:: 1e version
+
+
+== Acteurs principaux
+
+* Le joueur
+* L'arbitre
+
+== Acteurs de soutien
+
+* Aucun
+
+== Parties prenantes et intérêts
+
+* Aucun
+
+== Pré-conditions
+
+* Le joueur ne peut attaquer que les territoire qui sont adjascents a celui qui a choisit pour  l'attaque.
+* Le joueur peut attaquer le nombre de fois qu'il souhaite du moment où il lui reste encore des troupes.
+
+
+
+== Post-conditions
+
+=== Condition finale de réussite
+
+* La comparaison des dees donne designe un vainqueur de l'attaque
+* Le perdant apres l'attaque perd des armes dans son territoire
+
+=== Condition finale d'échec
+
+=== Garanties minimales
+
+
+== Événement déclencheur
+
+* Le début d'une partie.
+* La fin du tour de l'adversaire.
+
+== Scénario nominal
+
+
+[arabic]
+
+. Le joueur réalise les étapes suivantes pour l'attaque, *sans ordre déterminé*:
+.. Le joueur _choisit un de ses teritoires_ qu'il veut pour attaquer et _choisit le territoire enemie adjascent_ a son territoire choisit.
+.. Le joueur choisit le nombre armee disponible pour _attaquer_ le territoire enemi.
+.. Le joueur lance des dées pour attaquer.
+.. Le joueur
+. [[pass, 3]] Le joueur passe son attaque
+
+
+
+== Extensions
+
+:xrefstyle: short
+
+<<pass>> : il ne passe pas vraiment
+
+
+== Variantes
+
+
+
+== Fréquence
+* Le joueur peut attaquer autaunt de fois qu'il veut tant qu'il lui reste des armees dans un des ses territoires
+
+// To Do
+
+== Hypothèses
+
+* Aucune
+
+== Exigences particulières
+
+
+
+
+== Questions ouvertes
+
+. Aucune
+
+== À faire
+
+
+== Annexes

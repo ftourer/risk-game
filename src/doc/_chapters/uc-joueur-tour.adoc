@@ -1,0 +1,99 @@
+
+= Cas d'utilisation 2: Jouer un tour
+
+
+== Description
+
+Les joueurs jouent leurs tours alternativement, plusieurs fois dans une partie.
+Le joueur commence son tour en recevant des troupes en renforts et les places sur les territoires qu'il control.
+Le joueur peut envahir un territoir s'il le veut.
+Apres l'attaque le joueur peut renforcer un des ses territoires en deplacant ces troupes d'un territoire a un notre qui lui apppartient.
+le joueur gagne une carte de territoire a la fin du tour s'il a reussir a envahire sont enemi territoir
+
+
+Niveau:: Stratégique
+Portée:: Système
+Priorité:: Haute
+Échéance:: 1e version
+
+
+== Acteurs principaux
+
+* Le joueur
+* L'arbitre
+
+== Acteurs de soutien
+
+* Aucun
+
+== Parties prenantes et intérêts
+
+* Aucun
+
+== Pré-conditions
+
+* L'arbitre applique les effets avant chaque tour.
+// TO DO
+
+== Post-conditions
+
+=== Condition finale de réussite
+
+// TO DO
+
+=== Condition finale d'échec
+
+* Le jeu n'est pas instantifié.
+
+=== Garanties minimales
+
+
+== Événement déclencheur
+
+* Le début d'une partie.
+* La fin du tour de l'adversaire.
+
+== Scénario nominal
+
+
+[arabic]
+. Le jouer recoit des troupe en renfort en fonction de ses territoires
+. Le joueur attaque  son enemi.
+. Le joueur renforce ses territoire.
+. Le joueur peut renforcer un de ses territoire.
+. L'arbitre applique les effets de fin de tour.
+
+
+== Extensions
+
+:xrefstyle: short
+
+<<pass>> : il ne passe pas vraiment 
+
+
+== Variantes
+
+
+
+== Fréquence
+* Chaque tour
+
+// To Do
+
+== Hypothèses
+
+* Aucune
+
+== Exigences particulières 
+
+
+
+
+== Questions ouvertes
+
+. Aucune
+
+== À faire
+
+
+== Annexes

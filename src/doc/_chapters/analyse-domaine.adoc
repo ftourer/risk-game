@@ -1,0 +1,73 @@
+= Analyse du domaine
+ 
+== Introduction
+
+Risk est un jeu de conquete du monde, pour trois a six joueurs, chaque joueur doit bouger ses troupes strategiquement pendant son tour s'il veut remporter la partie. Si un joueur remplit la mission qui lui a ete confie au debut du jeu, il gagne la partie.  
+D’un point de vue fonctionnel, Risk a deux cas d’utilisation (ou fonctionnalités) principaux: la mise en place d’un jeu et jouer un tour.
+
+== Cas d'utilisation principaux
+
+Dans cette section, nous utilisons les Cas d’utilisation efficaces d’Alistar Cockburn pour spécifier les cas d’utilisation principaux de Risk:
+
+1. mise en place du jeu 
+2. Jouer un tour
+
+== Acteurs
+
+Nous avons considéré deux acteurs, le joueur( de 1 a n joueurs) et l'arbitre qui va reguler le jeu
+
+=== Joueur
+Le joueur est celui qui joue une partie. La partie comprend deux a six joueurs, qui sont des adversaires, l’un de l’autre.
+Un seul des joueurs commence la partie, l'initiateur.
+
+=== Arbitre
+L’arbitre veille au bon déroulement des parties. Il calcule les effets à appliquer en début et fin de tour.
+
+== Use case 1: Initilisation du Jeu
+=== Description 
+Deux a six joueur pour joueur risk. Chaque joueur choisit une couleur et l'arbitre distribue le nombres de soldats en fonction du nombre de joueurs. C'est a dire :
+
+* A 3 joueurs chacun prend 35 armées
+* A 4 joueurs chacun prend 30 armées
+* A 5 joueurs chacun prend 25 armées
+* A 6 joueurs chacun prend 20 armées
+
+Il distribue ensuite les cartes au joueurs. Chaque joueur lance un dé et l'arbitre designe le postion du de chaque joueur par rapport au nombre recu, si certains joueurs ont eu le meme nombre pendant leurs lance, ils doivent relance les d jusqu'ils soient departager.
+
+Chaque joueur depose a son tour dans  1 armée les territoires qui leur sont concédés.
+Ils peuvent ensuite répartir à leur gré.
+
+=== Acteurs principaux
+
+1. Les joueurs
+
+2. L’arbitre
+
+=== Acteurs de soutien
+Aucun pour l’instant
+
+=== Parties prenantes et intérêt
+Aucun pour l’instant
+
+
+=== Pré-conditions
+L’arbitre et les joueurs peuvent communiquer entre eux.
+Le jeu de cartes est au complet et disponibles.
+
+=== Post-conditions
+==== Condition finale de réussite
+Chaque joueur recoit sa mission et des cartes dans sa main.
+Chaque joueur a un tas de armee prêt.
+
+==== Condition finale d’échec
+Les joueurs n’ont pas reçu leurs cartes et leurs armees.
+
+==== Garanties minimales
+Aucune
+
+==== Événement déclencheur
+
+Les deux joueurs se retrouvent et souhaitent s’affronter.
+
+== Conclusion
+

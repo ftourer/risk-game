@@ -1,0 +1,80 @@
+= Project 2019: Risk
+
+== Objectifs 
+
+L’objectif de ce projet est de concevoir et de mettre en oeuvre un logiciel réparti permettant de jouer à des parties de Risk.
+Cette application pourra être utilisée par entre 2 et 6 joueurs par partie. 
+
+
+Pour développer cette application, vous devez réaliser l'analyse du domaine (Chapitre 1), en vous basant sur différentes sources d'information:
+
+* https://fr.wikipedia.org/wiki/Risk#Vue_générale_et_règles_principales[Les règles du jeu (Wikipedia)].
+* https://sourceforge.net/projects/domination/[Les sources du jeu Open Source Domination].
+* Le règles du jeu officiel ou toute autre source d'information dont vous disposez.
+
+Ensuite, vous devez lire attentivement la spécification des exigences (Chapitre 2), qui vous aideront à concevoir la solution. 
+Vous commencerez par la spécification des besoins (Chapitre 3), pour réaliser ensuite la conception préliminaire (Chapitre 4). 
+
+== Prérequis
+
+Pour réaliser ce projet, vous devez maîtriser les langages et outils suivants:
+
+. UML, le langage de modélisation unifié.
+. OCL, le langage d'expression de contraintes de UML.
+. Les langages Java et TypeScript.
+. Les outils de test unitaire JUnit et Jasmine
+. Apache Maven, l'outil pour la gestion et l'automatisation de production des projets logiciels Java et npm, le gestionnaire de paquets officiel de Node.js.
+
+== Organisation
+
+. La réalisation du projet sera faite par des groupes d'au plus 4 étudiants.
+. Pour réaliser le projet, chaque groupe doit créer une divergence (Fork) de ce dépôt. Le projet final doit être rendu **uniquement** par une demande de fusion (Merge request).
+. Les rapports doivent être rédigés en https://asciidoctor.org[Asciidoc], suivant les squelettes de document proposés.
+
+== Livrables
+
+Le projet se compose de plusieurs livrables, qui doivent être finis à des échéances différentes.
+A part pour l'échéance finale, toutes les autres échéances sont indicatives.
+Vous n'êtes pas obligés de procéder de façon séquentielle, vous pouvez améliorer les livrables en même temps.
+
+Livrables à fournir:
+
+. Chapitre 1, l'analyse du domaine (15 octobre 2019)
+. Chapitre 3, la conception préliminaire (25 octobre 2019)
+. Chapitre 4, la conception détaillée (15 novembre 2019)
+. Le code source et les tests unitaires de l'application: (20 décembre 2019)
+
+== Critères d'évaluation
+
+Les critères qui seront utilisés pour évaluer le travail rendu son les suivants:
+
+* Le respect des exigences logicielles.
+* La qualité du dossier de conception rendu.
+* La précision, la correction et la clarté de la conception: diagrammes, descriptions textuelles, etc..
+* La qualité et la pertinence des tests.
+* La cohérence entre la conception et le code.
+* La qualité du code.
+
+
+== Préparation
+
+Le projet utilise deux technologies qui ne sont pas vues en cours: Spring et Angular.
+Pour vous préparer, suivez les tutoriels suivants:
+
+* https://angular.io/tutorial/[Tutoriel Angular]
+* Tutoriels Spring:
+** https://spring.io/guides/gs/accessing-data-jpa/[Accessing Data with JPA]
+** https://spring.io/guides/gs/accessing-data-mysql/[Accessing data with MySQL]
+** https://spring.io/guides/gs/messaging-stomp-websocket/[Using WebSocket to build an interactive web application]
+
+== Compilation du rapport
+
+Vous pouvez utiliser Maven pour compiler le rapport de développement.
+Pour cela, utilisez la commande suivante:
+
+[source,shell]
+----
+mvn process-resources
+----
+
+La version PDF du rapport sera disponible dans le dossier `./target/doc/`

@@ -1,0 +1,98 @@
+
+= Cas d'utilisation 2-A: Renforcer territoire
+
+
+== Description
+
+Lorsque le tour commence le joueur reçois des troupes de l'arbitre en function du nombre des territoire qu'il a dans le jeux.
+et il doit obligatoirement les positionnés dans le jeu.
+
+Niveau:: Stratégique
+Portée:: Système
+Priorité:: Haute
+Échéance:: 1e version
+
+
+== Acteurs principaux
+
+* Le joueur
+* L'arbitre
+
+== Acteurs de soutien
+
+* Aucun
+
+== Parties prenantes et intérêts
+
+* Aucun
+
+== Pré-conditions
+
+* Le joueur doit posséder au moins un territoire dans le jeu.
+* L'arbitre doit distribuer distribuer des armées à debut de tour.
+
+
+== Post-conditions
+
+=== Condition finale de réussite
+
+* Le joueur reçoit troupes au début du tour.
+* L'arbitre distribue le nombre correspondant de troupes au joueur.
+
+
+=== Condition finale d'échec
+* Le joueur n'a pas de territoire dans la partie.
+* Le joueur n'a pas renfocer ses territoire.
+
+=== Garanties minimales
+
+
+== Événement déclencheur
+
+* La fin du tour de l'adversaire.
+* Le début d'un tour.
+
+
+== Scénario nominal
+
+
+[arabic]
+. L'arbitre applique les effets au début du tour.
+.. L'arbitre distribue des troupes au joueur en fonction de ses territoires.
+. Le joueur doit renforcer ses territoires.
+
+
+
+== Extensions
+
+:xrefstyle: short
+
+<<pass>> : il ne passe pas vraiment
+
+
+== Variantes
+
+
+
+== Fréquence
+* Debut du tour
+
+// To Do
+
+== Hypothèses
+
+* Aucune
+
+== Exigences particulières
+
+
+
+
+== Questions ouvertes
+
+. Aucune
+
+== À faire
+
+
+== Annexes
