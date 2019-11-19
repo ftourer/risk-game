@@ -31,13 +31,24 @@ L’arbitre veille au bon déroulement des parties. Il calcule les effets à app
 === Use case 1: Initilisation du Jeu
 ==== Description 
 L'initilisation du Jeu consiste à mélanger les cartes territoire  (y comprir les 2 jokers) et les placer en pile, face caché. C'est la pioche.
-Chaque joueur choisit une couleur parmir les couleurs (rouge,jaune,rose,noir,bleu ,vert)et prends  les pions de cette couleur, ils représentent son armée. Le nombre de
-régiments de départ dépend du nombre de joueurs:
+Chaque joueur choisit une couleur parmir les couleurs (rouge,jaune,rose,noir,bleu ,vert)et prends  les pions de cette couleur, ils représentent son armée. Les pions  sont des infanteries ou cavaleries ou artilleries.
+Le nombre de régiments de départ dépend du nombre de joueurs:
 
 * A 3 joueurs chacun prend 35 armées
 * A 4 joueurs chacun prend 30 armées
 * A 5 joueurs chacun prend 25 armées
 * A 6 joueurs chacun prend 20 armées
+
+Chaque pion représente un certain nombre dee
+régiments, comme indiqué ci-dessous :
+
+* 1 infanterie correspond à 1 régiment
+* 1 cavalerie correspond à 5 régiments
+* 1 artillerie correspond à 10 régiments
+
+On a aussi:
+* 5 pions infanterie correspond à 1 pions cavalerie 
+* 2 pions cavaleries correspondent à 1 pions artillerie
 
 Les régiments de départ seront placés sur le plateau de jeu avant de commencer la partie.
 Chaque joueur lance un dé pour déterminer le premier joueur. Celui qui obtient le résultat
@@ -61,15 +72,20 @@ Aucun pour l’instant
 Le contenu du jeu doit etre complet:
 
 * Le plateau de jeu avec :
+
 1. Afrique de couleur marron avec 6 territoire.
 2. Asie de couleur verte avec 12 territores.
 3. Océanie de couleur grise avec 4 territoire.
 4. Europe de couleur bleu avec 7 territoires.
 5. Amérique du nord de couleur jaune avec 9 territoires.
 6. Amérique du Sud de couleur orange avec 4 territoires.
+
 * 3 dés rouges et 2 dés bleu.
+
 * Des pions de 6 couleurs differentes representant les armées.
+
 * Les armées(55 exemplaires correspondant à 1 armée, 9 exemplaires correspondant à 5 armées et 7 exemplaires correspondant à 10 armées).
+
 * 42 cartes territoires   portant chacune
 l'un des dessins ( 1 infanterie ,1 cavalerie,1 artillerie).
 * 28 cartes Mission.
@@ -97,13 +113,13 @@ Les deux joueurs se retrouvent et souhaitent s’affronter.
 == Use case 2:  Jouer un tour
 
 === Description 
-Avec Risk, un tour comporte 4 phases qui doivent être qui doivent etre exécuter dans un ordre précis .
+Avec Risk, un tour comporte 4 phases qui doivent être exécuté dans un ordre précis .
 
 * Recevoir et déployer les renforts: étape obligatoire
 
 1. Au début du tour, le joueur réçoit des régiments supplémentaires pour renforcer ses troupes.
 Le nombre de régiments dépend du nombre de territoire et de continent (éventuellement) qu'il controlle et de toute serie de cartes territoires qu'il échange.
-Pour recevoir des régiments supplémentaires un calcul est fait: compter le nombre de territoire que le joueur controle et le diviser par 3(on arrondi à l'entier supérieur quand on a comme résultat un décimal). 
+Pour recevoir des régiments supplémentaires un calcul est fait: compter le nombre de territoire que le joueur controle et le diviser par 3(on arrondi à la partie entiere quand on a comme résultat un décimal). 
 Le nombre obtenu est le nombre de regiments à recevoir (les joueurs recoivent toujours un minimum de 3 territoire et ce même si le nombre obtenu est inferieur à 3).
 Pour controler un continent il faut controller tout ses territoire.Si un joueur controle l'Afrique alors il controle ses 6 territoire, pour l'Asie ils controle ses 12 territoires,pour
 l'Océanie ses 4 territoire,pour l'Europe ses 7 territoires,pour l'Amérique du nord ses 9 territoires,pour l'Amérique du Sud de ses 4 territoires.
@@ -164,5 +180,6 @@ Aucune
 ==== Événement déclencheur
 
 Les deux joueurs se retrouvent et souhaitent s’affronter.
+
 == Conclusion
 
