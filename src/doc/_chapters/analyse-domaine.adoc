@@ -42,9 +42,9 @@ Le nombre de régiments de départ dépend du nombre de joueurs:
 Chaque pion représente un certain nombre dee
 régiments, comme indiqué ci-dessous :
 
-* 1 infanterie correspond à 1 régiment
-* 1 cavalerie correspond à 5 régiments
-* 1 artillerie correspond à 10 régiments
+* Un infanterie correspond à 1 régiment
+* Un cavalerie correspond à 5 régiments
+* Un artillerie correspond à 10 régiments
 
 On a aussi:
 * 5 pions infanterie correspond à 1 pions cavalerie 
