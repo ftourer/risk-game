@@ -1,0 +1,24 @@
+<div class="container  f" *ngIf="show">
+  <div style="text-align:center;">
+    <img src="../../../assets/logo.png" alt="Avatar" style="width:100px;height:100px;">
+  </div>
+  <div class="h">
+    <h3>Please Enter Your Details</h3>
+  </div>
+  <form [formGroup]="initForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Name:</label>
+      <input type="text" formControlName="username" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label>Your Color:</label>
+      <input type="text" formControlName="player_color" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label>Number of players:</label>
+      <input type="text" formControlName="participants" class="form-control" required pattern="[0-9]{10}">
+    </div>
+
+    <button type="submit" [disabled]="!initForm.valid" class="btn btn-primary btn-lg">Submit</button>
+  </form>
+</div>
