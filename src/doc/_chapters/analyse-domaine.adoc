@@ -2,7 +2,7 @@
  
 == Introduction
 
-Risk est un jeu de conquete du monde, pour deux a six joueurs, chaque joueur doit  lancer les dés pour gagner les batailles avec ses troupes et échanger des cartes territoires  pour obtenir des renforts.Il s'agit ici de compter sur ses tactiles
+Risk est un jeu de conquete du monde, pour deux a six joueurs, chaque joueur doit  lancer les dés(3 dés de couleur rouge pour attaquer et de dés de couleur  blanche pour defendre)  pour gagner les batailles avec ses troupes et échanger des cartes territoires  pour obtenir des renforts.Il s'agit ici de compter sur ses tactiles
 afin de de mener ses troupes vers la victoire en prenant d'abord le controle des territoires, puis des continents entiers pour la
 domination du monde.  
 D’un point de vue fonctionnel, Risk a deux cas d’utilisation (ou fonctionnalités) principaux: la mise en place d’un jeu et jouer un tour. 
@@ -63,7 +63,14 @@ Le contenu du jeu doit etre complet:
 * 3 dés rouges et 2 dés bleu.
 * Des pions de 6 couleurs differentes representant les armées.
 * Les armées(55 exemplaires correspondant à 1 armée, 9 exemplaires correspondant à 5 armées et 7 exemplaires correspondant à 10 armées).
-* 42 cartes territoires.
+* 42 cartes territoires repartis sur les continents comme suite:
+
+1. Afrique de couleur marron avec 6 territoire.
+2. Asie de couleur verte avec 12 territores.
+3. Océanie de couleur grise avec 4 territoire.
+4. Europe de couleur bleu avec 7 territoires.
+5. Amérique du nord de couleur jaune avec 9 territoires.
+6. Amérique du Sud de couleur orange avec 4 territoires.
 * 28 cartes Mission.
 * 2 cartes jokers.
 
