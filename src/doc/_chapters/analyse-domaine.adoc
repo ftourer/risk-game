@@ -2,19 +2,24 @@
  
 == Introduction
 
-Risk est un jeu de conquete du monde, pour trois a six joueurs, chaque joueur doit bouger ses troupes strategiquement pendant son tour s'il veut remporter la partie. Si un joueur remplit la mission qui lui a ete confie au debut du jeu, il gagne la partie.  
-D’un point de vue fonctionnel, Risk a deux cas d’utilisation (ou fonctionnalités) principaux: la mise en place d’un jeu et jouer un tour.
+Risk est un jeu de conquete du monde, pour deux a six joueurs, chaque joueur doit  lancer les dés(3 dés de couleur rouge pour attaquer et de dés de couleur  blanche pour defendre)  pour gagner les batailles avec ses troupes et échanger des cartes territoires  pour obtenir des renforts.Il s'agit ici de compter sur ses tactiles
+afin de de mener ses troupes vers la victoire en prenant d'abord le controle des territoires, puis des continents entiers pour la
+domination du monde. Le but de ce jeu est d'éliminer toutes les armees
+adverse et de contrôler les 42 territoircs du plateaude jeu. 
+D’un point de vue fonctionnel, Risk a deux cas d’utilisation (ou fonctionnalités) principaux: la mise en place d’un jeu et jouer un tour. 
+
+
 
 == Cas d'utilisation principaux
 
 Dans cette section, nous utilisons les Cas d’utilisation efficaces d’Alistar Cockburn pour spécifier les cas d’utilisation principaux de Risk:
 
-1. mise en place du jeu 
-2. Jouer un tour
+1. mise en place du jeu .
+2. Jouer un tour.
 
 == Acteurs
 
-Nous avons considéré deux acteurs, le joueur( de 1 a n joueurs) et l'arbitre qui va reguler le jeu
+Nous avons considéré deux acteurs, le joueur et l'arbitre qui va reguler le jeu.
 
 === Joueur
 Le joueur est celui qui joue une partie. La partie comprend deux a six joueurs, qui sont des adversaires, l’un de l’autre.
@@ -23,19 +28,124 @@ Un seul des joueurs commence la partie, l'initiateur.
 === Arbitre
 L’arbitre veille au bon déroulement des parties. Il calcule les effets à appliquer en début et fin de tour.
 
-== Use case 1: Initilisation du Jeu
-=== Description 
-Deux a six joueur pour joueur risk. Chaque joueur choisit une couleur et l'arbitre distribue le nombres de soldats en fonction du nombre de joueurs. C'est a dire :
+=== Use case 1: Initilisation du Jeu
+==== Description 
+L'initilisation du Jeu consiste à mélanger les cartes territoire  (y comprir les 2 jokers) et les placer en pile, face caché. C'est la pioche.
+Chaque joueur choisit une couleur parmir les couleurs (rouge,jaune,rose,noir,bleu ,vert)et prends  les pions de cette couleur, ils représentent son armée. Les pions  sont des infanteries ou cavaleries ou artilleries.
+Le nombre de régiments de départ dépend du nombre de joueurs:
 
 * A 3 joueurs chacun prend 35 armées
 * A 4 joueurs chacun prend 30 armées
 * A 5 joueurs chacun prend 25 armées
 * A 6 joueurs chacun prend 20 armées
 
-Il distribue ensuite les cartes au joueurs. Chaque joueur lance un dé et l'arbitre designe le postion du de chaque joueur par rapport au nombre recu, si certains joueurs ont eu le meme nombre pendant leurs lance, ils doivent relance les d jusqu'ils soient departager.
+Chaque pion représente un certain nombre dee
+régiments, comme indiqué ci-dessous :
 
-Chaque joueur depose a son tour dans  1 armée les territoires qui leur sont concédés.
-Ils peuvent ensuite répartir à leur gré.
+* 1 infanterie correspond à 1 régiment
+* 1 cavalerie correspond à 5 régiments
+* 1 artillerie correspond à 10 régiments
+
+On a aussi:
+
+* 5 pions infanterie correspond à 1 pions cavalerie 
+* 2 pions cavaleries correspondent à 1 pions artillerie
+
+Les régiments de départ seront placés sur le plateau de jeu avant de commencer la partie.
+Chaque joueur lance un dé pour déterminer le premier joueur. Celui qui obtient le résultat
+le plus haut commence (en cas d'égalité,il faut lancer à nouveau). suivi du joueur situé à sa gauche.
+
+
+==== Acteurs principaux
+
+1. Les joueurs
+
+2. L’arbitre
+
+==== Acteurs de soutien
+Aucun pour l’instant
+
+==== Parties prenantes et intérêt
+Aucun pour l’instant
+
+
+==== Pré-conditions
+Le contenu du jeu doit etre complet:
+
+* Le plateau de jeu avec :
+
+1. Afrique de couleur marron avec 6 territoire.
+2. Asie de couleur verte avec 12 territores.
+3. Océanie de couleur grise avec 4 territoire.
+4. Europe de couleur bleu avec 7 territoires.
+5. Amérique du nord de couleur jaune avec 9 territoires.
+6. Amérique du Sud de couleur orange avec 4 territoires.
+
+* 3 dés rouges et 2 dés bleu.
+
+* Des pions de 6 couleurs differentes representant les armées.
+
+* Les armées(55 exemplaires correspondant à 1 armée, 9 exemplaires correspondant à 5 armées et 7 exemplaires correspondant à 10 armées).
+
+* 42 cartes territoires   portant chacune
+l'un des dessins ( 1 infanterie ,1 cavalerie,1 artillerie).
+* 28 cartes Mission.
+* 2 cartes jokers.
+
+L’arbitre et les joueurs doivent etre disponible.
+
+==== Post-conditions
+===== Condition finale de réussite
+Chaque joueur recoit ses cartes mission .
+Chaque joueur recoit le nombre d'armées en fonction  du nombre  joueurs.
+Les régiment de départ placés sur le plateau de jeu.
+
+===== Condition finale d’échec
+Les joueurs n’ont pas reçu leurs cartes 
+Le partage des armées ne s'est pas fait en fonction des joueurs.
+
+===== Garanties minimales
+Aucune
+
+===== Événement déclencheur
+
+Les deux joueurs se retrouvent et souhaitent s’affronter.
+
+== Use case 2:  Jouer un tour
+
+=== Description 
+Avec Risk, un tour comporte 4 phases qui doivent être exécuté dans un ordre précis .
+
+* Recevoir et déployer les renforts: étape obligatoire
+
+1. Au début du tour, le joueur réçoit des régiments supplémentaires pour renforcer ses troupes.
+Le nombre de régiments dépend du nombre de territoire et de continent (éventuellement) qu'il controlle et de toute serie de cartes territoires qu'il échange.
+Pour recevoir des régiments supplémentaires un calcul est fait: compter le nombre de territoire que le joueur controle et le diviser par 3(on arrondi à la partie entiere quand on a comme résultat un décimal). 
+Le nombre obtenu est le nombre de regiments à recevoir (les joueurs recoivent toujours un minimum de 3 territoire et ce même si le nombre obtenu est inferieur à 3).
+Pour controler un continent il faut controller tout ses territoire.Si un joueur controle l'Afrique alors il controle ses 6 territoire, pour l'Asie ils controle ses 12 territoires,pour
+l'Océanie ses 4 territoire,pour l'Europe ses 7 territoires,pour l'Amérique du nord ses 9 territoires,pour l'Amérique du Sud de ses 4 territoires.
+
+2. Il est possile d'échanger les cartes territoires  pour obtenir des renforts supplementaires. ces cartes s'obtiennent en conquérant  des territoires (voir phase 4 "piocher une carte")
+Les cartes territoires  s'échangent par séries.
+Une serie est composée de trois cartes portant le même 
+dessin  (3 x infanterie, 3 x cavalerie ,
+3 x artillerie), ou de trois cartes  portant chacune
+l'un des dessins ( 1 infanterie ,1 cavalerie,1 artillerie).
+Si le joueur à 1 jokers il peut remplacer
+n'importe lequel des trois dessins. Si un joueur possède  5 cartes ou plus. Il Doit
+échanger une série durrant son tour.
+
+Apres avoir collecter les regiments il doivent etre déployé dans les territoires que le joueur controle. Il peut décider de les mettres tous dans le mëme territoire ou les répartir entre tout ses possessions
+
+* Combat (optionnel)
+Si le joueur decide de ne pas combatre il passe directement à le phase 3
+
+* Manoeuvres stratégiques (optionnel)
+Si le joueur decide de ne manoeuvres stratégiques il passe directement à le phase 4
+Il s'agit d'u mouvement d'un de vos territoires vers un autres territoire et ce afin de renforcer sa ligne de front ou de preparer une offensive future. Le joueur peut déplacer autant de régiment qu'il veut au cours d'une manoeuvre stratégique depuis l'un de ses territoires vers un autre de ses connectés(s'ls sont adjacents ou si le joueur peut aller de l'un à l'autre en passant pas des territoire qu'il controle) à celui-ci. Mais un territoire ne doit pas rester vide.
+
+* Piocher une carte(seulemnt si le joueur à conquit au moin un territoire pendant le tour)
+le joueur pioche la premiere carte de la pile. Quelque soit le nombre de territoire conquis, il réçoit qu'une seule carte durant cette phase et passe le tour au joueur suivant.
 
 === Acteurs principaux
 
@@ -51,16 +161,19 @@ Aucun pour l’instant
 
 
 === Pré-conditions
-L’arbitre et les joueurs peuvent communiquer entre eux.
-Le jeu de cartes est au complet et disponibles.
+
+Initialisation du jeu reussi
 
 === Post-conditions
+
 ==== Condition finale de réussite
-Chaque joueur recoit sa mission et des cartes dans sa main.
-Chaque joueur a un tas de armee prêt.
+Les 4 phases de la description doivent ëtre exécuter dans le bon ordre.
+Les règles de chaques phase doit ëtre respectées.
 
 ==== Condition finale d’échec
-Les joueurs n’ont pas reçu leurs cartes et leurs armees.
+
+L'ordre des 4 phases n'a pas été respecter.
+Les règles n'ot pas été respectées.
 
 ==== Garanties minimales
 Aucune
