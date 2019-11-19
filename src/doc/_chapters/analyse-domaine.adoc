@@ -59,18 +59,18 @@ Aucun pour l’instant
 ==== Pré-conditions
 Le contenu du jeu doit etre complet:
 
-* Le plateau de jeu.
-* 3 dés rouges et 2 dés bleu.
-* Des pions de 6 couleurs differentes representant les armées.
-* Les armées(55 exemplaires correspondant à 1 armée, 9 exemplaires correspondant à 5 armées et 7 exemplaires correspondant à 10 armées).
-* 42 cartes territoires repartis sur les continents comme suite:
-
+* Le plateau de jeu avec :
 1. Afrique de couleur marron avec 6 territoire.
 2. Asie de couleur verte avec 12 territores.
 3. Océanie de couleur grise avec 4 territoire.
 4. Europe de couleur bleu avec 7 territoires.
 5. Amérique du nord de couleur jaune avec 9 territoires.
 6. Amérique du Sud de couleur orange avec 4 territoires.
+* 3 dés rouges et 2 dés bleu.
+* Des pions de 6 couleurs differentes representant les armées.
+* Les armées(55 exemplaires correspondant à 1 armée, 9 exemplaires correspondant à 5 armées et 7 exemplaires correspondant à 10 armées).
+* 42 cartes territoires   portant chacune
+l'un des dessins ( 1 infanterie ,1 cavalerie,1 artillerie).
 * 28 cartes Mission.
 * 2 cartes jokers.
 
@@ -92,6 +92,19 @@ Aucune
 ===== Événement déclencheur
 
 Les deux joueurs se retrouvent et souhaitent s’affronter.
+
+== Use case 2:  Jouer un tour
+=== Description 
+Avec Risk, un tour comporte 4 phases qui doivent être qui doivent etre exécuter dans un ordre précis .
+
+* Recevoir et déployer les renforts: étape obligatoire
+
+Au début du tour, le joueur réçoit des régiments supplémentaires pour renforcer ses troupes.
+Le nombre de régiments dépend du nombre de territoire et de continent (éventuellement) qu'il controlle et de toute serie de cartes territoires qu'il échange.
+Pour recevoir des régiments supplémentaires un calcul est fait: compter le nombre de territoire que le joueur controle et le diviser par 3(on arrondi à l'entier supérieur quand on a comme résultat un décimal), 
+le nombre obtenu est le nombre de regiments à recevoir (les joueurs recoivent toujours un minimum de 3 territoire et ce même si le nombre obtenu est inferieur à 3)
+Pour controler un continent il faut controller tout ses territoire.Si un joueur controle l'Afrique alors il controle ses 6 territoire, pour l'Asie ils controle ses 12 territoires,pour
+l'Océanie ses 4 territoire,pour l'Europe ses 7 territoires,pour l'Amérique du nord ses 9 territoires,pour l'Amérique du Sud de ses 4 territoires.
 
 == Conclusion
 
